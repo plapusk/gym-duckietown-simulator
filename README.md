@@ -23,7 +23,7 @@ This simulator was created as part of work done at [Mila](https://mila.quebec/).
 <p align="center">
 <img src="media/simplesim_free.png" width="300px"><br>
 </p>
-
+ 	
 <h2 align="center">
 Welcome to <b>Duckietown</b>!
 </h2>
@@ -360,3 +360,27 @@ conda install -c conda-forge ffmpeg
 ```
 
 Alternatively, screencasting programs such as [Kazam](https://launchpad.net/kazam) can be used to record the graphical output of a single window.
+
+## Aditions
+
+Added maps into the maps folder. Created 2 basic driver scripts one completely 
+independent:
+
+```
+python3 advanced_driver.py
+```
+
+And one with asisted decision with 'asw' in the intersections
+
+```
+python3 Decision_driver.py
+```
+For now the eniornment can only be modified in main on the line:
+```
+env = gym.make("Duckietown-udem1-v0", map_name="maps/udem1.yaml", camera_width=640, camera_height=640)
+```
+
+The models accepted can be seen in wraper.py, with the recommendation of using a
+resnet50 with a 4 class clasifier.
+
+

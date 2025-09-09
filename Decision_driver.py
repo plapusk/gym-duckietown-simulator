@@ -486,7 +486,7 @@ def main():
 
         # Check if we are at an intersection and waiting for input
         if debug_info.get("intersection") and debug_info["info"] == "Waiting at intersection":
-            print("Intersection detected. Press 'l' for left, 'r' for right, 's' for straight.")
+            print("Intersection detected. Press 'a' for left, 'd' for right, 'w' for straight.")
             while True:
                 key = cv2.waitKey(0) & 0xFF
                 if key == ord('a'):
