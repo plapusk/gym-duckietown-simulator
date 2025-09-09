@@ -5,7 +5,7 @@
     "carnivalmirror==0.6.2",
     "duckietown-world-daffy",
     "gym>=0.17.1",
-    "numpy>=1.10.0",
+    "numpy==1.22.1",
     "opencv-python>=3.4",
     "pyglet",
     "pyyaml>=3.11",

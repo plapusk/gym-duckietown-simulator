@@ -9,3 +9,8 @@ bin
 trained_models
 dist
 requirements.resolved
+
+# Ignore Duckietown virtual environments
+/duckie-env/
+/duckie-env-py38/
+/*.pth
